@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/filestorage
+    username: storage_admin
+    password: storage_password
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  servlet:
+    multipart:
+      max-file-size:
+        15MB
+
+upload:
+  path: C:/Users/dsfsa/IdeaProjects/FileStorageDB/uploads
