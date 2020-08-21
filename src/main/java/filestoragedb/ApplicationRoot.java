@@ -17,7 +17,7 @@ public class ApplicationRoot {
     }
 
     @Bean
-    public Docket api() {
+    public Docket swagger2ApiConfig() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
